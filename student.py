@@ -24,3 +24,7 @@ class Student:
     def alert_santa(self):
         """ Place student on Santa's list if student has been naughty """
         self.naughty_list = True
+
+    def apply_extension(self, days):
+        """ Create time extension """
+        self.end_date += timedelta(days=days)
