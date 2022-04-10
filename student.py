@@ -13,4 +13,14 @@ class Student:
 
     @property
     def full_name(self):
+        """ Create the full name """
         return f"{self._first_name} {self._last_name}"
+
+    @property
+    def email(self):
+        """ Create email addess """
+        return f"{self._first_name.lower()}.{self._last_name.lower()}@email.com"
+
+    def alert_santa(self):
+        """ Place student on Santa's list if student has been naughty """
+        self.naughty_list = True
